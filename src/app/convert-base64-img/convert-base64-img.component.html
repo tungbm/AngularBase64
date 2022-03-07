@@ -1,0 +1,23 @@
+<div align="center">
+    <div class=" d-inline-block">
+        <h3 class="title">Base64 to Image</h3>
+        <div style="width: 400px;" >
+            <form >
+                <div class="form-group">
+                    <label>Input:</label>
+                    <textarea [(ngModel)]="dataImg.value" [ngModelOptions]="{standalone: true}" rows="10" cols="55"></textarea>
+                </div>
+                <br/>
+                <label >Output:</label>
+                <div class="form-group">
+                    <img *ngIf="valueOutputImgDecode" [src]="url2"  height="300">
+                </div>
+                <br><br>
+                <td>
+                    <button (click)="Base64toImg()" class="btn btn-success">Decode</button>
+                </td>
+            </form>
+        </div>
+    </div>
+</div>
+
