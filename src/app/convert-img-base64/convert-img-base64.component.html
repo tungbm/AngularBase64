@@ -1,0 +1,24 @@
+<div align="center">
+    <div class=" d-inline-block">
+        <h3 class="title">Image to Base64</h3>
+        <div style="width: 400px;">
+        <form >
+            <label>Input:</label>
+          <br>
+            <div class="form-group">
+                <input type='file' (change)="onSelectFile($event)">
+            </div>
+            <br/>
+            <img [src]="url" height="200"> <br/>
+            <div class="form-group">
+                <label>Output:</label>
+                <textarea READONLY rows="10" cols="55">{{ valueOuputImgEncode }}</textarea>
+            </div>
+            <br>
+            <td>
+                <button (click)="ImgToBase64()" class="btn btn-success">Encode</button>
+            </td>
+        </form>
+        </div>
+    </div>
+</div>

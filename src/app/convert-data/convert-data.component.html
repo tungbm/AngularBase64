@@ -1,0 +1,22 @@
+<div align="center">
+  <h3 class="title">Text Base64</h3>
+  <div style="width: 400px;">
+      <form >
+      <div class="form-group" >
+        <label>Input:</label>
+        <input type="text" class="form-control" id="value" required [(ngModel)]="dataText.value" name="value">
+      </div>
+        <br>
+      <div class="form-group">
+        <label>Output:</label>
+        <input type="text" READONLY class="form-control" id="valueOutput" value="{{ valueOutput }}" name="valueOutput">
+      </div>
+      <br>
+      <td>
+        <button  (click)="TextToBase64()" class="btn btn-success">Encode</button>
+        <button  (click)="Base64ToText()" class="btn btn-success" style="margin-left: 10px">Decode</button>
+      </td>
+    </form>
+  </div>
+</div>
+<br>
